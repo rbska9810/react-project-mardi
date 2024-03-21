@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --font-kr: "Noto Sans KR", sans-serif;
+  --font-en: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--font-en);
+}
+.TopBanner {
+  height: 63px;
+  background-color: #000;
+  color: white;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TopBanner>p {
+  font-weight: 400;
+}
+.nav {
+  height: 120px;
+  padding: 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #C5C5C5;
+  box-sizing: border-box;
+}
+.nav>ul {
+  display: flex;
+  width: 50%;
+  max-width: 690px;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+.nav>ul>li {
+  cursor: pointer;
+  font-weight: 700;
+  transition: .2s;
+}
+.nav>ul>li:hover {
+  color: rgb(136, 136, 136);
+}
+.nav form {
+  display: flex;
+  align-items: center;
+}
+.nav form>.login {
+  color: #000;
+  font-family: var(--font-kr);
+  cursor: pointer;
+}
+.nav form>div {
+  position: relative;
+}
+.nav form>div>img {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav form>div>input {
+  width: 225px;
+  height: 38px;
+  padding: 0 0.9rem;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  border: 1px solid #919191;
+  border-bottom: none;
+  outline: none;
+}
+.nav form>div>input:focus::placeholder {
+  opacity: 0;
+}
+/* mainVisual */
+.MainVisual {
+  margin-bottom: 43px;
+}
+.MainVisual img {
+  width: 100%;
+}
+
+
+/* productAll */
+.ProductAll {
+  margin-bottom: 1rem;
+}
+.ProductAllInner {
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ProductCard {
+  width: 310px;
+  cursor: pointer;
+}
+.ProductCard .SubTitle {
+  font-size: 0.688rem;
+  font-weight: 600;
+  margin-top: 13px;
+}
+.ProductCard .Title {
+  font-size: 0.813rem;
+  font-weight: 600;
+  margin: 5px 0 12px;
+}
+.ProductCard .Price {
+  font-size: 0.813rem;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.ProductAllInner img {
+  width: 100%;
+}
+
+/* login */
+.Login {
+  width: 30%;
+  margin: 4rem auto;
+}
+.Login h3 {text-align: center; font-size: 2rem;}
+.Login input[type="email"],
+.Login input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.Login input[type="checkbox"] {
+  margin-bottom: 1rem;
+}
+.Login button {
+  width: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: 900;
+  transition: .2s;
+}
+.Login button:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* ProductDetail */
+.ProductDetail {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+  gap: 5rem;
+}
+.ProductDetail img {
+  width: 50%;
+}
+.ProductDetail form {
+  display: flex;
+  flex-direction: column;
+}
+.ProductDetail .Title {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.ProductDetail .Price {
+  margin: 1rem 0 2rem;
+}
+.ProductDetail select {
+  width: 40%;
+  height: 50px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  outline: none;
+}
+.ProductDetail button {
+  height: 50px;
+  border: 1px solid #000;
+  background-color: transparent;
+  font-weight: 700;
+}
+.ProductDetail button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* footer */
+.Footer {
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+  font-size: 0.813rem;
+  line-height: 1.5;
+}
